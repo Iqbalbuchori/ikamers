@@ -4,7 +4,7 @@
 	<section id="cart_items">
 		<div class="container">
 			<div class="register-req">
-				<p>Please fillup this form............</p>
+				<p>Please fill up this form...</p>
 			</div><!--/register-req-->
 
 			<div class="shopper-informations">

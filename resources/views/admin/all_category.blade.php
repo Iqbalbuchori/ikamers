@@ -38,7 +38,7 @@
                  @foreach( $all_category_info as $v_category)
 					  <tbody>
 						<tr>
-						<td>{{ $v_category->category_id }}</td>
+						<td align="center">{{ $v_category->category_id }}</td>
 						<td class="center">{{ $v_category->category_name }}</td>
 						<td class="center">{{$v_category->category_description}}</td>
 

@@ -42,24 +42,18 @@
 						<td class="center">{{ $v_order->customer_name }}</td>
 						<td class="center">{{$v_order->order_total}}</td>
                         <td class="center">{{ $v_order->order_status }}</td>
-						{{-- <td class="center">
-							@if($v_category->publication_status==1)
-							<span class="label label-success">Active</span>
-							@else
-                                <span class="label label-danger">Unactive</span>
-							@endif
-						</td> --}}
+						
 
 						<td class="center">
-                            
-							<a class="btn btn-danger" href="{{URL::to('/unactive/'.$v_order->order_id)}}">
+              	
+							<a class="btn btn-danger" href="{{URL::to('/unactive-order/'.$v_order->order_status)}}">
 								<i class="halflings-icon white thumbs-down"></i>  
 							</a>
                            
-                           {{--   <a class="btn btn-success" href="{{URL::to('/active/'.$v_order->order_id)}}">
+                           <!-- <a class="btn btn-success" href="{{URL::to('/active/'.$v_order->order_id)}}">
 								<i class="halflings-icon white thumbs-up"></i>  
-							</a> --}}
-                           
+						   </a>
+                            -->
 
 							<a class="btn btn-info" href="{{URL::to('/view-order/'.$v_order->order_id)}}">
 								<i class="halflings-icon white edit"></i>  

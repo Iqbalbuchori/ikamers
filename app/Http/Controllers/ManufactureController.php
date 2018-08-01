@@ -20,7 +20,6 @@ class ManufactureController extends Controller
     	$data=array();
         $data['manufacture_id']=$request->manufacture_id;
         $data['manufacture_name']=$request->manufacture_name;
-        $data['manufacture_description']=$request->manufacture_description;
         $data['publication_status']=$request->publication_status;
         DB::table('tbl_manufacture')->insert($data);
         Session::put('message','Manufacture added successfully !! ');
@@ -84,8 +83,7 @@ class ManufactureController extends Controller
     {
          $data=array();
          $data['manufacture_name']=$request->manufacture_name;
-         $data['manufacture_description']=$request->manufacture_description;
-        
+      
          DB::table('tbl_manufacture')
              ->where('manufacture_id',$manufacture_id)
              ->update($data);

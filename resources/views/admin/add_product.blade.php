@@ -55,10 +55,10 @@
 					</div>
 				  </div>
 				  <div class="control-group">
-					<label class="control-label" for="selectError3">Manufacture Name</label>
+					<label class="control-label" for="selectError3">Nama Provinsi</label>
 					<div class="controls">
 					  <select id="selectError3" name="manufacture_id">
-						<option>seslect manufacture </option>
+						<option>select merk </option>
                         <?php
                            $all_published_manufacture=DB::table('tbl_manufacture')
                                                   ->where('publication_status',1)
@@ -71,14 +71,7 @@
 					</div>
 				  </div>
 				<div class="control-group hidden-phone">
-				  <label class="control-label" for="textarea2">Product short description </label>
-				  <div class="controls">
-					<textarea class="cleditor" name="product_short_description" rows="3" required=""></textarea>
-				  </div>
-				</div>
-
-				<div class="control-group hidden-phone">
-				  <label class="control-label" for="textarea2">Product Long description </label>
+				  <label class="control-label" for="textarea2">Product Description </label>
 				  <div class="controls">
 					<textarea class="cleditor" name="product_long_description" rows="3" required=""></textarea>
 				  </div>
@@ -95,18 +88,6 @@
 					<input class="input-file uniform_on" name="product_image" id="fileInput" type="file">
 				  </div>
 				</div>  
-				<div class="control-group">
-				  <label class="control-label" for="date01">Product Size</label>
-				  <div class="controls">
-					<input type="text" class="input-xlarge" name="product_size" required="">
-				  </div>
-				</div>
-				<div class="control-group">
-				  <label class="control-label" for="date01">Product Color</label>
-				  <div class="controls">
-					<input type="text" class="input-xlarge" name="product_color" required="">
-				  </div>
-				</div>
 				<div class="control-group hidden-phone">
 				  <label class="control-label" for="textarea2">Publication status  </label>
 				  <div class="controls">

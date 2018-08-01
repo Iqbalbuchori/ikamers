@@ -71,14 +71,6 @@
 					  </select>
 					</div>
 				  </div>
-				<div class="control-group hidden-phone">
-				  <label class="control-label" for="textarea2">Product short description </label>
-				  <div class="controls">
-					<textarea class="cleditor" name="product_short_description" rows="3" >
-						{{$product_info->product_short_description}}
-					</textarea>
-				  </div>
-				</div>
 
 				<div class="control-group hidden-phone">
 				  <label class="control-label" for="textarea2">Product Long description </label>
@@ -101,19 +93,7 @@
 					<input class="input-file uniform_on" name="product_image" id="fileInput" type="file" 
 					value="{{$product_info->product_image}}">
 				  </div>
-				</div>  
-				<div class="control-group">
-				  <label class="control-label" for="date01">Product Size</label>
-				  <div class="controls">
-					<input type="text" class="input-xlarge" name="product_size" value="{{$product_info->product_size}}">
-				  </div>
-				</div>
-				<div class="control-group">
-				  <label class="control-label" for="date01">Product Color</label>
-				  <div class="controls">
-					<input type="text" class="input-xlarge" name="product_color" value="{{$product_info->product_color}}">
-				  </div>
-				</div>
+				</div>     
 				<div class="form-actions">
 				  <button type="submit" class="btn btn-primary">update Product </button>
 				  <button type="reset" class="btn">Cancel</button>

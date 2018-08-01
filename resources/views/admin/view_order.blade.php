@@ -9,8 +9,8 @@
 						<table class="table">
 							  <thead>
 								  <tr>
-									  <th>customer name</th>
-									  <th>mobile</th>                                       
+									  <th>Customer Name</th>
+									  <th>Mobile</th>                                       
 								  </tr>
 							  </thead>   
 							  <tbody>
@@ -66,10 +66,10 @@
 						  <thead>
 							  <tr>
 								  <th>Order Id</th>
-								  <th>Product name</th>
-								  <th>Product price</th>
-								  <th>Product sales quantity</th>
-								  <th>Product sub total</th>
+								  <th>Product Name</th>
+								  <th>Product Price</th>
+								  <th>Product Sales Quantity</th>
+								  <th>Product SubTotal</th>
 							  </tr>
 						  </thead> 
 
@@ -79,9 +79,9 @@
 						
 				             <td>{{$v_order->order_id}}</td> 
 				             <td>{{$v_order->product_name}}</td> 
-				             <td>{{$v_order->product_price}}</td>
+				             <td>Rp. {{$v_order->product_price}}</td>
 				             <td>{{$v_order->product_sales_quantity}}</td> 
-                             <td>{{$v_order->product_price*$v_order->product_sales_quantity}}</td>
+                             <td>Rp. {{$v_order->product_price*$v_order->product_sales_quantity}}</td>
 				                
                               
 							</tr>
@@ -90,8 +90,8 @@
 						  </tbody>
                           <tfoot>
                           	<tr>
-                          	<td colspan="4">Total with vat: </td>
-                          	<td><strong>={{$v_order->order_total}}  Tk</strong></td>
+                          	<td colspan="4">Total </td>
+                          	<td><strong>= Rp. {{$v_order->order_total}}</strong></td>
                           	</tr>
                           </tfoot>
 				               

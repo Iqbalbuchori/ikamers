@@ -77,14 +77,14 @@
 		</div>
 		<div class="paymentCont col-sm-8">
 					<div class="headingWrap">
-							<h3 class="headingTop text-center">Select Your Payment Method</h3>	
-							<p class="text-center">Created with bootsrap button and using radio button</p>
-					</div>	
+							<h3 class="headingTop text-center">SELECT YOUR PAYMENT METHOD</h3>	
+							</div>	
+                 
 				<form action="{{url('/order-place')}}" method="post">
 					{{csrf_field()}}
-				  <input type="radio" name="payment_method" value="handcash"> Hand Cash<br>
-				  <input type="radio" name="payment_method" value="cart"> Debit Card<br>
-				  <input type="radio" name="payment_method" value="paypal"> Paypal<br>
+				  <input type="radio" name="payment_method" value="handcash">
+				  <img src="{{URL::to('frontend/images/home/bank.png')}}" width="150px">
+				  <br>
 				  <input type="submit" name="" value="Done">
 				</form>
 					

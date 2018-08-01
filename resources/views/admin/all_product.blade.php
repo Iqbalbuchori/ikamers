@@ -32,8 +32,8 @@
 							  <th>Product Name</th>
 							  <th>Product Image</th>
 							  <th>Product price</th>
-							  <th>category Name</th>
-							  <th>manufactue Name</th>
+							  <th>Category Name</th>
+							  <th>Province Name</th>
 							  <th>Status</th>
 							  <th>Actions</th>
 						  </tr>
@@ -44,7 +44,7 @@
 						<td>{{ $v_product->product_id }}</td>
 						<td class="center">{{ $v_product->product_name }}</td>
                        <td> <img src="{{URL::to($v_product->product_image)}}" style="height: 80px; width: 80px;"></td>
-                        <td class="center">{{ $v_product->product_price }} Tk</td>
+                        <td class="center">Rp. {{ $v_product->product_price }}</td>
                         <td class="center">{{ $v_product->category_name }}</td>
                         <td class="center">{{ $v_product->manufacture_name }}</td>
 						<td class="center">

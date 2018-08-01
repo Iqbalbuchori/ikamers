@@ -8,7 +8,7 @@
 	</li>
 	<li>
 		<i class="icon-edit"></i>
-		<a href="#">Add ctaegory</a>
+		<a href="#">Add category</a>
 	</li>
 </ul>
 

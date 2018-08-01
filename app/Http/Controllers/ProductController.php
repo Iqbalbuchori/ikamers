@@ -55,11 +55,8 @@ class ProductController extends Controller
         $data['product_name']=$request->product_name;
         $data['category_id']=$request->category_id;
         $data['manufacture_id']=$request->manufacture_id;
-        $data['product_short_description']=$request->product_short_description;
         $data['product_long_description']=$request->product_long_description;
         $data['product_price']=$request->product_price;
-        $data['product_size']=$request->product_size;
-        $data['product_color']=$request->product_color;
         $data['publication_status']=$request->publication_status;     
         $image=$request->file('product_image');
     if ($image) {
@@ -134,11 +131,9 @@ class ProductController extends Controller
          $data['product_name']=$request->product_name;
          $data['category_id']=$request->category_id;
          $data['manufacture_id']=$request->manufacture_id;
-         $data['product_short_description']=$request->product_short_description;
          $data['product_long_description']=$request->product_long_description;
          $data['product_price']=$request->product_price;
-         $data['product_size']=$request->product_size;
-         $data['product_color']=$request->product_color;
+         
         $image=$request->file('product_image');
     if ($image) {
        $image_name=str_random(20);
@@ -161,15 +156,13 @@ class ProductController extends Controller
 
        }
     }
-        echo "<pre>";
-         print_r($data);
-        echo "</pre>";
-         // DB::table('tbl_manufacture')
-         //     ->where('manufacture_id',$manufacture_id)
-         //     ->update($data);
+      
+         DB::table('tbl_products')
+             ->where('product_id',$product_id)
+             ->update($data);
 
-         //     Session::get('message','Manufacture update successfully !');
-         //     return Redirect::to('/all-manufacture');
+             Session::get('message','Product update successfully !');
+             return Redirect::to('/all-product');
     }
    
 }

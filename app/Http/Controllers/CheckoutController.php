@@ -123,9 +123,9 @@ class CheckoutController extends Controller
 
      if ($payment_gateway=='handcash') {
           
-           Cart::destroy();
+           
           return view('pages.handcash');
-         
+         Cart::destroy();
         
      }elseif ($payment_gateway=='cart') {
    

@@ -26,7 +26,7 @@
 							<input type="email" placeholder="Email Address" name="customer_email" required=""/>
 							<input type="password" placeholder="Password" name="password" required=""/>
 							<input type="text" placeholder="Mobile Number" name="mobile_number" required=""/>
-							<button type="submit" class="btn btn-default">Signup</button>
+							<button type="submit" class="btn btn-default">Sign Up</button>
 						</form>
 					</div><!--/sign up form-->
 				</div>

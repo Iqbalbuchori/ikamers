@@ -4,9 +4,9 @@
 	<!-- start: Meta -->
 	<meta charset="utf-8">
 	<title>Admin login</title>
-	<meta name="description" content="Metro Admin Template.">
-	<meta name="author" content="Łukasz Holeczek">
-	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keyword" content="">
 	<!-- end: Meta -->
 	
 	<!-- start: Mobile Specific -->
@@ -35,10 +35,6 @@
 		<div class="row-fluid">				
 			<div class="row-fluid">
 				<div class="login-box">
-					<div class="icons">
-						<a href="index.html"><i class="halflings-icon home"></i></a>
-						<a href="#"><i class="halflings-icon cog"></i></a>
-					</div>
 					<p class="alert-danger">
 					<?php  
 					$messege=Session::get('messege');
@@ -48,6 +44,7 @@
                        }
 
 					?>
+					<img src="{{URL::to('frontend/images/home/logo.png')}}" alt="" />
 				   </p>
 					<h2>Login to your account</h2>
 					<form class="form-horizontal" action="{{url('/admin-dashboard')}}" method="post">
@@ -70,11 +67,7 @@
 							</div>
 							<div class="clearfix"></div>
 					</form>
-					<hr>
-					<h3>Forgot Password?</h3>
-					<p>
-						No problem, <a href="#">click here</a> to get a new password.
-					</p>	
+						
 				</div><!--/span-->
 			</div><!--/row-->
 			
