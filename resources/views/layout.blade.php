@@ -129,7 +129,7 @@
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href=""><i class="fa fa-user"></i> Account</a></li>
+                                
                 <?php $customer_id=Session::get('customer_id');
                       $shipping_id=Session::get('shipping_id');
                 ?>
@@ -143,11 +143,13 @@
                         <?php }else{}?>
 
 
-                                <li><a href="{{URL::to('/show-cart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                              <li><a href="{{URL::to('/show-cart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
                            
                            
                           
                             <?php if($customer_id != NULL){?>
+                                <li><a href="{{URL::to('/customer')}}"><i class="fa fa-user"></i> Account</a></li>
+                               
                                 <li><a href="{{URL::to('/customer_logout')}}"><i class="fa fa-lock"></i> Logout</a></li>
                           <?php  }else{?>
                             

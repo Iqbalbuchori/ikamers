@@ -11,6 +11,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 class RegisterController extends Controller
 {
     /*
+   
+
     |--------------------------------------------------------------------------
     | Register Controller
     |--------------------------------------------------------------------------
@@ -20,7 +22,6 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
-
     use RegistersUsers;
 
     /**

@@ -9,13 +9,11 @@ use Session;
 use Illuminate\Support\Facades\Redirect;
 class AdminController extends Controller
 {
-
+ 
     public function index()
     {
     	return view('admin_login');
     }
-
-  
 
     public function dashboard(Request $request)
     {
