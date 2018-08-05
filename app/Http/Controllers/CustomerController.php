@@ -20,7 +20,7 @@ class CustomerController extends Controller
             'status_jual' => "0"
         ]);
 
-        Session::put('customer_name',$request->customer_name);
+        Session::put('customer_name',$req->customer_name);
         return redirect('/');      
 
     }
