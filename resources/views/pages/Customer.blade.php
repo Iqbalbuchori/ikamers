@@ -11,31 +11,24 @@
 				<div class="row">
 					<div class="col-sm-12 clearfix">
 						<div class="bill-to">
-							<div class="form-one">
-								<form action="" method="get">
-                                    
-								<p>Nama</p>
-								<li class="list-group-item text-right"><span class="pull-left"></span></li><br>
-								<p>E-mail</p>
-								<li class="list-group-item text-right"><span class="pull-left"></span></li><br>
-								<p>Mobile Number</p>
-								<li class="list-group-item text-right"><span class="pull-left"></span> </li><br>
-								<p>Status</p>
-								<li class="list-group-item text-right"><span class="pull-left"></span> </li><br>
-								
+						
+							<p>Nama</p>
+							<span class="pull-left">{{ Session::get('customer_name') }}</span><br>
+							<p>E-mail</p>
+							<span class="pull-left">{{ Session::get('customer_email') }}</span></li><br>
+							<p>Mobile Number</p>
+							<span class="pull-left">{{ Session::get('mobile_number') }}</span></li><br>
+							<p>Status</p>
+							<span class="pull-left">{{ status(Session::get('status')) }}</span></li><br>
+							<?php $penjual = Session::get('status') ?>
 
-                                <!-- <p>Nama lengkap</p>
-                                <input type="text" name="shipping_first_name"   required="">
-                                <p>Nomor Telephone</p>
-								<input type="text" name="shipping_mobile_number"   required="">
-								<p>Alamat E-mail</p>
-                                <input type="text" name="shipping_email"  required="">
-                                <p>Status</p>
-                                <input type="text" name="shipping_mobile_number"  required="">
-		 -->
-								
-								</form>
-							</div>
+							@if($penjual == 0)
+							<p>Daftar Penjual</p>
+							<a href="{{ route('daftar.penjual') }}" class="btn btn-success">Registrasi</a>
+							@else
+							<p>Halaman Dashboard</p>
+							<a href="{{ url('/dashboard') }}" class="btn btn-success">Dashboard</a>
+							@endif
 						</div>
 					</div>			
 				</div>

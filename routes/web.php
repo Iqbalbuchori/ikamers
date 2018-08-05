@@ -17,26 +17,27 @@ Route::get('/','HomeController@index');
 Route::get('/product_by_category/{category_id}','HomeController@show_product_by_category');
 Route::get('/product_by_manufacture/{manufacture_id}','HomeController@show_product_by_manufacture');
 Route::get('/view_product/{product_id}','HomeController@product_details_by_id');
+
 //cart routes are here----------------
 Route::post('/add-to-cart','CartController@add_to_cart');
 Route::get('/show-cart','CartController@show_cart');
 Route::get('/delete-to-cart/{rowId}','CartController@delete_to_cart');
 Route::post('/update-cart','CartController@update_cart');
-Route::get('/customer','CustomerController@customer');
-//checkout routes are here======
-Route::get('/login-check','CheckoutController@login_check');
-Route::post('/customer_registration','CustomerController@buatCustomer');
 
-Route::post('/customer_login','CustomerController@customer_login');
 // gak konek konek coba 
 Route::get('/checkout','CheckoutController@checkout');
 Route::post('/save-shipping-details','CheckoutController@save_shipping_details');
 
-Route::get('/customer_logout','CheckoutController@customer_logout');
+// KUSTOMER
+Route::get('/customer_logout','CustomerController@customer_logout');
+Route::get('/customer','CustomerController@customer');
+Route::get('/login-check','CheckoutController@login_check');
+Route::post('/customer_registration','CustomerController@buatCustomer');
+Route::post('/customer_login','CustomerController@customer_login');
 
+// PAYMENT
 Route::get('/payment','CheckoutController@payment');
 Route::post('/order-place','CheckoutController@order_place');
-
 Route::get('/manage-order','CheckoutController@manage_order');
 Route::get('/view-order/{order_id}','CheckoutController@view_order');
 
@@ -46,6 +47,10 @@ Route::get('/logout','SuperAdminController@logout');
 Route::get('/admin','AdminController@index');
 Route::get('/dashboard','SuperAdminController@index');
 Route::post('/admin-dashboard','AdminController@dashboard');
+
+// DAFTAR PENJUAL 
+Route::get('/register/penjual', 'CustomerController@daftarPenjual')->name('daftar.penjual');
+Route::post('/register/penjual', 'CustomerController@postPenjual')->name('save.penjual');
 
 //category related route
 Route::get('/add-category','CategoryController@index');
