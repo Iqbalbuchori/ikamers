@@ -3,7 +3,7 @@
 <head>	
 	<!-- start: Meta -->
 	<meta charset="utf-8">
-	<title>Admin login</title>
+	<title>Admin Penjual login</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="keyword" content="">
@@ -76,7 +76,7 @@
 	
 		</div><!--/fluid-row-->
 	
-	<!-- start: JavaScript-->m
+	<!-- start: JavaScript-->
 
 		<script src="{{asset('backend/js/jquery-1.9.1.min.js')}}"></script>
 	    <script src="{{asset('backend/js/jquery-migrate-1.0.0.min.js')}}"></script>	

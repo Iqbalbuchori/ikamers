@@ -28,6 +28,12 @@
             <textarea class="cleditor" name="description_toko" rows="3" required=""></textarea>
             </div>
         </div>
+        <div class="control-group hidden-phone">
+            <label class="control-label" for="textarea2">KAHMI DAERAH</label>
+            <div class="controls">
+            <textarea class="cleditor" name="description_toko" rows="3" required=""></textarea>
+            </div>
+        </div>
 
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">Daftar</button>
@@ -38,6 +44,7 @@
 				</div>
 			</div>
 		</div>
+    </div>
 	</section> <!--/#cart_items-->
 
 @endsection
