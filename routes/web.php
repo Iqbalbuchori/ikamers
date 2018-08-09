@@ -40,17 +40,27 @@ Route::get('/payment','CheckoutController@payment');
 Route::post('/order-place','CheckoutController@order_place');
 Route::get('/manage-order','CheckoutController@manage_order');
 Route::get('/view-order/{order_id}','CheckoutController@view_order');
-
-// siap mas
 //Backend routes............................
 Route::get('/logout','SuperAdminController@logout');
 Route::get('/admin','AdminController@index');
 Route::get('/dashboard','SuperAdminController@index');
 Route::post('/admin-dashboard','AdminController@dashboard');
 
+
 // DAFTAR PENJUAL 
 Route::get('/register/penjual', 'CustomerController@daftarPenjual')->name('daftar.penjual');
 Route::post('/register/penjual', 'CustomerController@postPenjual')->name('save.penjual');
+Route::get('/dashboard/penjual','PenjualController@index')->name('penjual.dashboard');
+
+//penjualproducts rotes are here
+Route::get('penjual/add-product/','PenjualProductController@index');
+Route::post('penjual/save-product','PenjualProductController@save_product');
+Route::get('penjual/all-product','PenjualProductController@all_product');
+Route::get('penjual/unactive_product/{product_id}','PenjualProductController@unactive_product');
+Route::get('penjual/active_product/{product_id}','PenjualProductController@active_product');
+Route::get('penjual/delete-product/{product_id}','PenjualProductController@delete_product');
+Route::get('penjual/edit-product/{product_id}','PenjualProductController@edit_product');
+Route::post('penjual/update-product/{product_id}','PenjualProductController@update_product');
 
 //category related route
 Route::get('/add-category','CategoryController@index');
@@ -72,7 +82,7 @@ Route::post('/update-manufacture/{manufacture_id}','ManufactureController@update
 Route::get('/unactive_manufacture/{manufacture_id}','ManufactureController@unactive_manufacture');
 Route::get('/active_manufacture/{manufacture_id}','ManufactureController@active_manufacture');
 
-//products rotes are here
+//adminproducts rotes are here
 Route::get('/add-product','ProductController@index');
 Route::post('/save-product','productController@save_product');
 Route::get('/all-product','ProductController@all_product');

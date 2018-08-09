@@ -27,7 +27,7 @@
 							<a href="{{ route('daftar.penjual') }}" class="btn btn-success">Registrasi</a>
 							@else
 							<p>Halaman Dashboard</p>
-							<a href="{{ url('/dashboard') }}" class="btn btn-success">Dashboard</a>
+							<a href="{{ url('/dashboard/penjual') }}" class="btn btn-success">Dashboard</a>
 							@endif
 						</div>
 					</div>			

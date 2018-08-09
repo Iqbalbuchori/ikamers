@@ -108,5 +108,16 @@ class CategoryController extends Controller
       }
     }
 
+    public function PenjualAuthCheck()
+    {
+      $admin_id=Session::get('customer_id');
+      
+      if ($penjual_id) {
+         return;
+      }else{
+         return Redirect::to('/penjual/dashboard')->send();
+      }
+    }
+
 }
 

@@ -29,7 +29,7 @@
            ?>
 		</p>
 		<div class="box-content">
-			<form class="form-horizontal" action="{{ url('/update-product',$product_info->product_id)}}" method="post" 
+			<form class="form-horizontal" action="{{ url('penjual/update-product',$product_info->product_id)}}" method="post" 
 			enctype="multipart/form-data">
 				{{ csrf_field() }}
 			  <fieldset>

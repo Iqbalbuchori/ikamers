@@ -57,19 +57,19 @@
 
 						<td class="center">
                             @if($v_product->publication_status==1)
-							<a class="btn btn-danger" href="{{URL::to('/unactive_product/'.$v_product->product_id)}}">
+							<a class="btn btn-danger" href="{{URL::to('penjual/unactive_product/'.$v_product->product_id)}}">
 								<i class="halflings-icon white thumbs-down"></i>  
 							</a>
                             @else
-                             <a class="btn btn-success" href="{{URL::to('/active_product/'.$v_product->product_id)}}">
+                             <a class="btn btn-success" href="{{URL::to('penjual/active_product/'.$v_product->product_id)}}">
 								<i class="halflings-icon white thumbs-up"></i>  
 							</a>
                             @endif
 
-							<a class="btn btn-info" href="{{URL::to('/edit-product/'.$v_product->product_id)}}">
+							<a class="btn btn-info" href="{{URL::to('penjual/edit-product/'.$v_product->product_id)}}">
 								<i class="halflings-icon white edit"></i>  
 							</a>
-							<a class="btn btn-danger" href="{{URL::to('/delete-product/'.$v_product->product_id)}}" id="delete">
+							<a class="btn btn-danger" href="{{URL::to('penjual/delete-product/'.$v_product->product_id)}}" id="delete">
 								<i class="halflings-icon white trash"></i> 
 							</a>
 						</td>

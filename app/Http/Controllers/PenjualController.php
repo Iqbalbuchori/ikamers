@@ -12,7 +12,7 @@ class PenjualController extends Controller
  
     public function index()
     {
-    	return view('penjual_login');
+    	return view('admin_penjual');
     }
 
     public function dashboard(Request $request)
@@ -27,7 +27,7 @@ class PenjualController extends Controller
     	    if ($result) {
     	           Session::put('penjual_name',$result->penjual_name);
     	           Session::put('penjual_id',$result->penjual_id);
-    	           return Redirect::to('/dashboard');
+    	           return Redirect::to('/dashboard/penjual');
     	       }else{                
                    Session::put('messege','Email or Password Invalid');
                    return Redirect::to('/penjual'); 

@@ -1,4 +1,4 @@
-@extends('admin_layout')
+@extends('penjual_layout')
 @section('admin_content')
 <ul class="breadcrumb">
 	<li>
@@ -29,7 +29,7 @@
            ?>
 		</p>
 		<div class="box-content">
-			<form class="form-horizontal" action="{{ url('/save-product') }}" method="post" 
+			<form class="form-horizontal" action="{{ url('penjual/save-product') }}" method="post" 
 			enctype="multipart/form-data">
 				{{ csrf_field() }}
 			  <fieldset>
