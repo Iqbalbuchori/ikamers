@@ -59,7 +59,7 @@
 					</div>
 				  </div>
 				  <div class="control-group">
-					<label class="control-label" for="selectError3">Manufacture Name</label>
+					<label class="control-label" for="selectError3">Nama Provinsi</label>
 					<div class="controls">
 					  <select id="selectError3" name="manufacture_id">
 
@@ -73,7 +73,7 @@
 				  </div>
 
 				<div class="control-group hidden-phone">
-				  <label class="control-label" for="textarea2">Product Long description </label>
+				  <label class="control-label" for="textarea2">Product description </label>
 				  <div class="controls">
 					<textarea class="cleditor" name="product_long_description" rows="3" >
 						{{$product_info->product_long_description}}
